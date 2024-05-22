@@ -11,7 +11,7 @@ modal = Modal(
 )
 
 if modal.is_open():
-    with modal.container():
+    with modal.auto_closed_container():
         with st.spinner(text="잠시만 기다려주세요..."):
             st.markdown("<p style='font-size: 14px; color: Gray;'>이 작업은 몇 분 정도 걸릴 수 있습니다.</p>",
                         unsafe_allow_html=True)
@@ -19,5 +19,5 @@ if modal.is_open():
             modal.close()
 success = False
 
-if st.button("spinner", key="spin", disabled=st.session_state.wait_button_disable):
+if st.button("spinner", key="spin"):
     modal.open()
