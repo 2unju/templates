@@ -13,4 +13,6 @@ streamlit-modal == 0.1.2
 cp changed_source/swm_modal_init.py $VENV_DIR_NAME/lib/python3.X/site-packages/streamlit_modal/__init__.py
 ```
 
-## ADD and REMOVE Input Box
+## Text Onclick
+![streamlit_templeate_onclick](https://github.com/2unju/streamlit-templates/assets/77797199/d2e9cdb8-e22c-4d58-8f57-9927892176c0)
+
